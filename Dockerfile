@@ -1,1 +1,1 @@
-FROM nginx:1.13.3
+FROM centos:7
