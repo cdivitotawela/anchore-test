@@ -1,9 +1,9 @@
 
 node (){
 
-  stage ('Build Container'){
+  stage ('Security Test'){
 
-    sh "docker build -t myimg:1.0 ${env.WORKSPACE}/."
+    def dockerFile = new FileNameFinder().getFileNames(env.WORKSPACE, 'Dockerfile')
 
   }
 
