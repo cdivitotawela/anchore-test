@@ -3,8 +3,8 @@ node (){
 
   stage ('Security Test'){
 
-    sh "echo ${env.WORKSPACE}"
-    
+    sh "find ${env.WORKSPACE} -name Dockerfile"
+
   }
 
 }
